@@ -6,7 +6,7 @@ class App extends React.Component {
   async onSearchSubmit(term) {
     const response = await axios.get('https://api.unsplash.com/search/photos', {
       params: { query: term },
-      headers: {
+      headers: {  
         Authorization:  
           'Client-ID DYcHPxSG-JOZ6Z7bXRNYF4ehhrFcaPewg9uSu81Z09U',
       },  
@@ -18,8 +18,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: '10px' }}>
-        <SearchBar onSubmit={this.onSearchSubmit} />
-      </div>
+        <SearchBar onSubmit={this.onSearchSubmit} />     
+      </div>  
     );
   }
 }
