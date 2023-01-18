@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from "axios"
 
 
  
 export default  axios.create({
-    BASE_URL:"https://api.unsplash.com/search/photos",
+    baseURL:"https://api.unsplash.com",
     headers: {  
         Authorization:  
           'Client-ID DYcHPxSG-JOZ6Z7bXRNYF4ehhrFcaPewg9uSu81Z09U',
