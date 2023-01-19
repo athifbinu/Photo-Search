@@ -1,18 +1,12 @@
 
 
-
-.img-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,mimax(250px,1fr));
-    grid-gap:25px;
-
-;
-
+.img-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  
 }
 
-.img-list img {
+.img-list img{
   width: 300px;
-  
- 
-
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import './ImageList.css'
 
+
+
 const ImageList=(props) =>{
     const images=  props.images.map(({description,id,urls})=>{
 
@@ -8,7 +10,11 @@ const ImageList=(props) =>{
       
     })
 
-  return <div className='img-list'>{images}</div>
+  return <div  className='img-list' >
+    
+    {images} 
+    
+    </div>
   
 }
 
