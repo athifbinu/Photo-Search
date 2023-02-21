@@ -1,18 +1,20 @@
 import React from 'react'
 import './ImageList.css'
-
-
+import { motion } from 'framer-motion'
+import {Col} from "reactstrap"
 
 const ImageList=(props) =>{
     const images=  props.images.map(({description,id,urls})=>{
 
-        return <img alt={description} key={id} src={urls.regular} />
+        return <motion.img  whileHover={{scale:0.9}} alt={description} key={id} src={urls.regular} />
       
     })
 
   return <div  className='img-list' >
-    
-    {images} 
+     <Col lg='6'>
+     {images} 
+     </Col>
+
     
     </div>
   
